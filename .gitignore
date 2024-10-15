@@ -1,0 +1,8 @@
+*.subject.pdf
+
+compile_flags.txt
+
+# Generated Files
+obj
+
+aaaaand...OPEN
