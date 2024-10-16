@@ -56,7 +56,7 @@ void ScavTrap::attack(const std::string &target) {
   std::cout << "ScavTrap " << name_ << " attacks " << target << ", causing "
             << attack_damage_ << " points of damage!" << std::endl;
 
-  energy_points_ = energy_points_ - 1;
+  energy_points_ -= 1;
 }
 
 void ScavTrap::guardGate() {
