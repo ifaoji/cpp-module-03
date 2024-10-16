@@ -21,8 +21,6 @@ ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name) {
 
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
   std::cout << "ScavTrap copy constructor called" << std::endl;
-
-  (void)other;
 }
 
 ScavTrap::~ScavTrap() {
@@ -57,7 +55,7 @@ void ScavTrap::attack(const std::string &target) {
   std::cout << "ScavTrap " << name_ << " attacks " << target << ", causing "
             << attack_damage_ << " points of damage!" << std::endl;
 
-  energy_points_ = energy_points_ - 1;
+  energy_points_ -= 1;
 }
 
 void ScavTrap::guardGate() {
