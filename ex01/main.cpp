@@ -33,6 +33,17 @@ int main() {
   }
 
   {
+    PrintHeader("Virtual Destructor");
+
+    ClapTrap *bernhart;
+    ScavTrap *hubert = new ScavTrap("Hubert");
+
+    bernhart = hubert;
+
+    delete bernhart;
+  }
+
+  {
     PrintHeader("Gate Keeper");
 
     ScavTrap hubert("Hubert");
