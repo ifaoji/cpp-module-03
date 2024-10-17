@@ -20,6 +20,10 @@ public:
 
 private:
   std::string name_;
+
+  using ClapTrap::hit_points_;
+  using ClapTrap::energy_points_;
+  using ClapTrap::attack_damage_;
 };
 
 #endif
